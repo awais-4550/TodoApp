@@ -176,7 +176,7 @@ public class TodoApp extends JFrame {
             g2d.fillRoundRect(0,0,getWidth(),getHeight(),20,20);
 
             // Add lines for paper texture
-            g2d.setColor(new Color(220, 200, 150, 80));
+            g2d.setColor(new Color(220, 200, 140, 80));
             for (int i = 5; i < getHeight(); i += 6) {
                 g2d.drawLine(5, i, getWidth()-5, i);
             }
@@ -195,7 +195,7 @@ public class TodoApp extends JFrame {
             paintChildren(g);
         }
 
-        private void removeCard() {
+        private void  removeCard() {
             carouselPanel.remove(this);
             cards.remove(this);
             carouselPanel.revalidate();
