@@ -15,9 +15,9 @@ public class TodoApp extends JFrame {
     private Random random;
 
     public TodoApp() {
-        super("📝 Antique Paper-Cut To-Do Carousel");
+        super("A To-Do Carousel");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(800, 500);
+        setSize(850, 520);
         setLocationRelativeTo(null);
 
         cards = new ArrayList<>();
@@ -46,7 +46,7 @@ public class TodoApp extends JFrame {
                 Graphics2D g2d = (Graphics2D) g;
                 g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
                 GradientPaint gp = new GradientPaint(0, 0, new Color(255, 240, 220),
-                        0, getHeight(), new Color(240, 230, 210));
+                        0, getHeight(), new Color(245, 230, 210));
                 g2d.setPaint(gp);
                 g2d.fillRect(0, 0, getWidth(), getHeight());
             }
@@ -172,7 +172,7 @@ public class TodoApp extends JFrame {
             g2d.fillRoundRect(5,5,getWidth()-10,getHeight()-10,20,20);
 
             // Draw antique paper background programmatically
-            g2d.setColor(new Color(250, 240, 210)); // base paper color
+            g2d.setColor(new Color(250, 245, 210)); // base paper color
             g2d.fillRoundRect(0,0,getWidth(),getHeight(),20,20);
 
             // Add lines for paper texture
